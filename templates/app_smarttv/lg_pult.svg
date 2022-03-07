@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 792" version="1.1" y="0px" x="0px">
+<rect fill-opacity=".7" rx="18" ry="18" height="792" width="280" stroke="#3c4448" onclick="closeNav()" y="0.05" x="0.05" stroke-width=".1" fill="#323b3e"/>
+<g id="btn_OFF" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_OFF" rx="8" ry="8" height="29" width="46" stroke="#000" y="15" x="18" stroke-width=".5" fill="#ff0c00"/>
+ <text id="btn_OFFtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="33" x="42" font-weight="700" fill="#fff">OFF</text>
+</g>
+<g id="btn_MUTE" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_MUTE" rx="8" ry="8" height="29" width="46" stroke="#454e53" y="15" x="84" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_MUTEtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="33" x="107" font-weight="700" fill="#fff">MUTE</text>
+</g>
+<g id="btn_INPUT" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_INPUT" rx="8" ry="8" height="29" width="46" stroke="#454e53" y="15" x="150" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_INPUTtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="33" x="174" font-weight="700" fill="#fff">INPUT</text>
+</g>
+<g id="btn_MENU" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_MENU" rx="8" ry="8" height="29" width="45" stroke="#454e53" y="15" x="216" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_MENUtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="33" x="239" font-weight="700" fill="#fff">Home</text>
+</g>
+
+<g id="btn_MYAPPS" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <circle id="path1003" cx="43" stroke="#000" cy="88" r="24" stroke-width=".8" fill="#ffa794" fill-opacity=".3"/>
+ <text id="btn_MYAPPStext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="95" x="43" font-weight="700" fill="#fff">MYAPPS</text>
+</g>
+<g id="btn_EXIT" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <circle id="path1003-3" cx="236" stroke="#000" cy="88" r="24" stroke-width=".8" fill="#ffa794" fill-opacity=".3"/>
+ <text id="btn_EXITtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="95" x="236" font-weight="700" fill="#fff">EXIT</text>
+</g>
+<g id="btn_volUP" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_volUPfon" d="m18.23 375.1c0.1739 4.4 4.04 4.846 6.642 2.319l68.53-68.7c1.771-2.078 0.538-5.782-2.109-5.878l-57.47 0.0305c-7.63 0.3927-15.41 7.682-15.54 17z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#151a1e"/>
+ <path id="btn_volUP" d="m18.23 375c0.1739 4.4 4.04 4.846 6.642 2.319l68.53-68.67c1.771-2.078 0.5381-5.782-2.109-5.878l-57.47 0.0305c-7.63 0.3926-15.41 7.682-15.54 17z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#323b3e"/>
+ <text id="btn_volUPtext" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="333" x="37" font-weight="700" fill="#fff">+</text>
+</g>
+<g id="btn_chUP" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_chUPfon" d="m260.7 375.2c-0.1739 4.402-4.041 4.848-6.644 2.319l-68.53-68.7c-1.771-2.078-0.5382-5.783 2.11-5.879l57.48 0.0305c7.632 0.3928 15.41 7.684 15.55 17.01z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#151a1e"/>
+ <path id="btn_chUP" d="m260.7 375.2c-0.1739 4.402-4.041 4.848-6.644 2.319l-68.53-68.7c-1.771-2.078-0.5382-5.783 2.11-5.879l57.48 0.0305c7.632 0.3928 15.41 7.684 15.55 17.01z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#323b3e"/>
+ <text id="btn_chUPtext" style="text-anchor:middle" font-family="FreeSans" font-size="18px" y="327" x="235" font-weight="700" fill="#fff">ch+</text>
+</g>
+<g id="btn_volDOWN" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_volDOWNfon" d="m18.23 220.7c0.1739-4.402 4.041-4.848 6.644-2.319l68.53 68.7c1.771 2.078 0.5382 5.783-2.11 5.879l-57.48-0.0305c-7.632-0.392-15.41-7.676-15.55-17.01z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#151a1e"/>
+ <path id="btn_volDOWN" d="m18.23 220.7c0.1739-4.402 4.041-4.848 6.644-2.319l68.53 68.7c1.771 2.078 0.5382 5.783-2.11 5.879l-57.48-0.0305c-7.632-0.392-15.41-7.676-15.55-17.01z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#323b3e"/>
+ <text id="btn_volDOWNtext" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="273" x="40" font-weight="700" fill="#fff">-</text>
+</g>
+<g id="btn_chDOWN" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_chDOWNfon" d="m260.7 220.7c-0.1739-4.402-4.041-4.848-6.644-2.319l-68.53 68.7c-1.771 2.078-0.5382 5.783 2.11 5.879l57.48-0.0305c7.632-0.3928 15.41-7.684 15.55-17.01z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#151a1e"/>
+ <path id="btn_chDOWN" d="m260.7 220.7c-0.1739-4.402-4.041-4.848-6.644-2.319l-68.53 68.7c-1.771 2.078-0.5382 5.783 2.11 5.879l57.48-0.0305c7.632-0.3928 15.41-7.684 15.55-17.01z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#31373b"/>
+ <text id="btn_chDOWNtext" style="text-anchor:middle" font-family="FreeSans" font-size="18px" y="282" x="237" font-weight="700" fill="#fff">ch-</text>
+</g>
+
+ <path id="btn_FON" stroke-width=".1" fill="#151a1e" d="m30.22 167.9 99.33-99.51c7.236-6.612 14.94-6.538 22.1 0l98.88 99.61c5.428 6.602 7.254 13.37 0 21.98l-98.87 98.89c-6.976 6.199-15.14 6.039-22.12 0l-99.34-98.9c-6.563-6.849-6.646-15.12-0.09195-22.06z"/>
+
+<g id="btn_DOWN" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_DOWN" d="m78.36 237.9 61.94-59.4l60.79 60.97-49.13 48.17c-7.101 7.262-16.47 7.047-23.11 0.00002z" fill-rule="evenodd" stroke="#454e53" stroke-width="1px" fill="#31373b"/>
+ <path id="btn_DOWNsymb" stroke-linejoin="round" d="m148.5 236.1h-17.56l8.779 10.88z" stroke-opacity=".7" fill-rule="evenodd" stroke="#121a1e" fill="#abaeae"/>
+</g>
+<g id="btn_RIGHT" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_RIGHT" d="m201.1 118.2-60.8 60.3l60.79 60.97 48.75-49.45c7.256-7.111 7.291-15.85 0.00001-23.14z" fill-rule="evenodd" stroke="#3c4448" stroke-width="1px" fill="#31373b"/>
+ <path id="btn_RIGHTsymb" stroke-linejoin="round" d="m202.3 170.4v17.56l10.92-8.779z" stroke-opacity=".7" fill-rule="evenodd" stroke="#121a1e" fill="#abaeae"/>
+</g>
+<g id="btn_LEFT" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_LEFT" d="m79.88 118.2 60.42 60.3-61.94 59.4-47.6-47.9c-7.257-7.109-7.291-15.85-0.00002-23.14z" fill-rule="evenodd" stroke="#3c4448" stroke-width="1px" fill="#31373b"/>
+ <path id="btn_LEFTsymb" stroke-linejoin="round" d="m78.67 188v-17.6l-10.69 8.8z" stroke-opacity=".7" fill-rule="evenodd" stroke="#121a1e" stroke-width="1.001" fill="#abaeae"/>
+</g>
+<g id="btn_UP" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <path id="btn_UP" d="m79.88 118.2 60.42 60.3 60.8-60.3-49.1-49.68c-7.098-6.139-16.46-5.956-23.1-0.000012z" fill-rule="evenodd" stroke="#3c4448" stroke-width="1px" fill="#31373b"/>
+ <path id="btn_UPsymb" stroke-linejoin="round" d="m149.3 120.9h-17.56l8.779-10.88z" stroke-opacity=".7" fill-rule="evenodd" stroke="#121a1e" fill="#abaeae"/>
+</g>
+
+ <circle id="btn_OKfon" stroke="#454e53" cy="179" cx="140" r="37.5" fill="#151a1e"/>
+<g id="btn_OK" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <circle id="btn_OK" fill-rule="evenodd" stroke="#454e53" cy="179" cx="140" r="37.5" fill="#2e363a"/>
+ <text id="btn_OKtext" style="text-anchor:middle" font-family="FreeSans" font-size="16px" y="185" x="140" font-weight="700" fill="#fff">OK</text>
+</g>
+<g id="btn_1" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_1" cmd="btn_1" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="492.8" x="18.03" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_1text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="524" x="52" font-weight="700" fill="#fff">1</text>
+</g>
+<g id="btn_2" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '0.1'; send_cmdx(id);">
+ <rect id="btn_2" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="492.8" x="105.7" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_2text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="524" x="140" font-weight="700" fill="#fff">2</text>
+</g>
+<g id="btn_3" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_3" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="492.8" x="192.6" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_3text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="524" x="226" font-weight="700" fill="#fff">3</text>
+</g>
+<g id="btn_5" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_5" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="567.7" x="105.7" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_5text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="600" x="140" font-weight="700" fill="#fff">5</text>
+</g>
+<g id="btn_6" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_6" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="567.7" x="192.6" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_6text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="600" x="226" font-weight="700" fill="#fff">6</text>
+</g>
+<g id="btn_4" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '0.1'; send_cmdx(id);">
+ <rect id="btn_4" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="568" x="18" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_4text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="600" x="52" font-weight="700" fill="#fff">4</text>
+</g>
+<g id="btn_8" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_8" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="643" x="105.7" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_8text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="676" x="140" font-weight="700" fill="#fff">8</text>
+</g>
+<g id="btn_0" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_0" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="718" x="106" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_0text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="750" x="140" font-weight="700" fill="#fff">0</text>
+</g>
+<g id="btn_9" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_9" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="642.7" x="193" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_9text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="676" x="226" font-weight="700" fill="#fff">9</text>
+</g>
+<g id="btn_7" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_7" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="642.7" x="18" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_7text" style="text-anchor:middle" font-family="FreeSans" font-size="26px" y="676" x="52" font-weight="700" fill="#fff">7</text>
+</g>
+<g id="btn_BACK" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_BACK" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="718" x="192.6" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_BACKtext" style="text-anchor:middle" font-family="FreeSans" font-size="18px" y="750" x="226" font-weight="700" fill="#fff">BACK</text>
+</g>
+<g id="btn_LIST" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_LIST" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="718" x="18" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_LISTtext" style="text-anchor:middle" font-family="FreeSans" font-size="18px" y="750" x="52" font-weight="700" fill="#fff">LIST</text>
+</g>
+<g id="btn_RED" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_RED" rx="8" ry="8" height="29" width="46" stroke="#000" y="390" x="18" stroke-width=".5" fill="#f00"/>
+ <text id="btn_REDtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="408" x="42" font-weight="700" fill="#fff">Пауза</text>
+</g>
+<g id="btn_GREEN" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_GREEN" rx="8" ry="8" height="29" width="46" stroke="#454e53" y="390" x="84" stroke-width=".5" fill="#008000"/>
+ <text id="btn_GREENtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="408" x="107" font-weight="700" fill="#fff">Экран</text>
+</g>
+<g id="btn_YELLOW" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_YELLOW" rx="8" ry="8" height="29" width="46" stroke="#454e53" y="390" x="150" stroke-width=".5" fill="#ff0"/>
+ <text id="btn_YELLOWtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="408" x="174" font-weight="700" fill="#fff">Поиск</text>
+</g>
+<g id="btn_BLUE" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_BLUE" rx="8" ry="8" height="29" width="45" stroke="#454e53" y="390" x="216" stroke-width=".5" fill="#00f"/>
+ <text id="btn_BLUEtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="408" x="239" font-weight="700" fill="#fff">Назад</text>
+</g>
+
+
+<g id="btn_YOUTUBE" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_YOUTUBE" cmd="btn_1" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="435" x="18" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_YOUTUBEtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="463" x="52" font-weight="700" fill="#fff">YouTube</text>
+</g>
+<g id="btn_RUTUBE" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '0.1'; send_cmdx(id);">
+ <rect id="btn_RUTUBE" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="435" x="105" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_RUTUBEtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="463" x="140" font-weight="700" fill="#fff">RuTube</text>
+</g>
+<g id="btn_3" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_3" rx="8" ry="8" height="44" width="69" stroke="#454e53" y="435" x="192" stroke-width=".5" fill="#32383c"/>
+ <text id="btn_3text" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="463" x="226" font-weight="700" fill="#fff">IVI</text>
+</g>
+
+<g id="btn_SWBETPRSEVIDEO" onmouseover="this.style.opacity = '0.5';" onmouseout="this.style.opacity = '1';" onclick = "this.style.opacity = '1'; send_cmdx(id);">
+ <rect id="btn_SWBETPRSEVIDEO" rx="8" ry="8" height="29" width="46" stroke="#454e53" y="340" x="84" stroke-width=".5" fill="#008000"/>
+ <text id="btn_SWBETPRSEVIDEOtext" style="text-anchor:middle" font-family="FreeSans" font-size="12px" y="350" x="107" font-weight="700" fill="#fff">MU</text>
+</g>
+</svg>
+
+<script>
+function openNav() {
+  document.getElementById("pultNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("pultNav").style.width = "0%";
+}
+function send_cmdx(id){
+		var url='/popup/app_smarttv.html?alias=';
+		url+='28LB491U-ZB_20';
+		url+='&cmd=';
+		url+=id;
+		//alert(url);
+		AJAXRequest(url, '', '');
+};
+</script>

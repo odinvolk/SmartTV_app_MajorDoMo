@@ -151,7 +151,7 @@ class app_smarttv extends module
             include_once("lg.class.php");
             global $cmd;
 			$out["alias"] = $alias;
-            $code = array('btn_volUP' => '24', 'btn_volDOWN' => '25', 'btn_chUP' => '27', 'btn_chDOWN' => '28', 'btn_OK' => '20', 'btn_UP' => '12', 'btn_DOWN' => '13', 'btn_LEFT' => '14', 'btn_RIGHT' => '15', 'btn_0' => '2', 'btn_1' => '3', 'btn_2' => '4', 'btn_3' => '5', 'btn_4' => '6', 'btn_5' => '7', 'btn_6' => '8', 'btn_7' => '9', 'btn_8' => '10', 'btn_9' => '11', 'btn_LIST' => '50', 'btn_BACK' => '403', 'btn_OFF' => '1', 'btn_MUTE' => '26', 'btn_INPUT' => '47', 'btn_MENU' => '21');
+            $code = array('btn_OFF' => '1', 'btn_0' => '2', 'btn_1' => '3', 'btn_2' => '4', 'btn_3' => '5', 'btn_4' => '6', 'btn_5' => '7', 'btn_6' => '8', 'btn_7' => '9', 'btn_8' => '10', 'btn_9' => '11', 'btn_UP' => '12', 'btn_DOWN' => '13', 'btn_LEFT' => '14', 'btn_RIGHT' => '15', 'btn_OK' => '20', 'btn_MENU' => '21', 'btn_MENUkey' => '22', 'btn_BACK' => '23', 'btn_volUP' => '24', 'btn_volDOWN' => '25', 'btn_MUTE' => '26', 'btn_chUP' => '27', 'btn_chDOWN' => '28', 'btn_BLUE' => '29', 'btn_GREEN' => '30', 'btn_RED' => '31', 'btn_YELLOW' => '32', 'btn_INPUT' => '47', 'btn_PIPSV' => '48', 'btn_SUBTITLE' => '49', 'btn_LIST' => '50', 'btn_TELETEXT' => '51', 'btn_MARK' => '52', 'btn_3DVIDEO' => '400', 'btn_3DLR' => '401', 'btn_DASH' => '402', 'btn_FLASHBACK' => '403', 'btn_FAVCH' => '404', 'btn_QMENU' => '405', 'btn_TEXTOPT' => '406', 'btn_AUDIODESC' => '407', 'btn_NETCASTKEY' => '408', 'btn_ENERGYSAV' => '409', 'btn_AVMODE' => '410', 'btn_SIMPLINK' => '411', 'btn_EXIT' => '412', 'btn_RESPROGLIST' => '413', 'btn_PIPCHUP' => '414', 'btn_PIPCHDOWN' => '415', 'btn_SWBETPRSEVIDEO' => '416', 'btn_MYAPPS' => '417');
             $lgTV = new lg_tv();
             $device = $this->device($alias);
             $this->sendCmd($lgTV, $device, $code[$cmd]);
@@ -162,12 +162,12 @@ class app_smarttv extends module
     {
         $this->view_mode = "search";
     }
-	
+
 	function msearch(&$out)
     {
         $this->view_mode = "msearch";
 		global $ip;
-		if(isset($ip)){	
+		if(isset($ip)){
 			$out["IP"] = $ip;
 			$lgTV = new lg_tv();
 			$res = $lgTV->requestPairing($ip);
@@ -178,13 +178,13 @@ class app_smarttv extends module
 			}
 		}
 	}
-	
+
 	function findDevices(&$out)
     {
         $lgTV = new lg_tv();
         $response = $lgTV->mSearch();
 		$this->view_mode = "search";
-	
+
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt( $ch, CURLOPT_USERAGENT, "UDAP/2.0" );
@@ -300,7 +300,7 @@ class app_smarttv extends module
         global $alias;
         $rec = SQLSelectOne("SELECT ID FROM classes WHERE TITLE LIKE '" . DBSafe($this->className) . "'");
         $obj = SQLSelectOne("SELECT * FROM objects WHERE CLASS_ID='" . $rec['ID'] . "' AND TITLE LIKE '" . DBSafe($alias) . "'");
-        // some action 
+        // some action
         SQLExec("DELETE FROM history WHERE OBJECT_ID='" . $obj['ID'] . "'");
         SQLExec("DELETE FROM methods WHERE OBJECT_ID='" . $obj['ID'] . "'");
         SQLExec("DELETE FROM pvalues WHERE OBJECT_ID='" . $obj['ID'] . "'");
@@ -314,8 +314,8 @@ class app_smarttv extends module
 		include_once("lg.class.php");
         $lgTV = new lg_tv();
         $device = $this->device($alias);
-		
-		
+
+
 		switch ($cmd){
 			case 'setVol':
 				$this -> setVolume($lgTV, $device, $val);
@@ -340,15 +340,15 @@ class app_smarttv extends module
 				return $res;
 		}
 	}
-		
-	
+
+
 	function getImage (&$lgTV, &$device)
     {
 		$query = $lgTV->sendQuery($device["ip"], $device["key"], "screen_image", 1);
 		$res = $query["http_data"];
 		return $res;
     }
-	
+
 	function getChannel(&$lgTV, &$device, $val)
     {
 		$res = array();
@@ -356,11 +356,11 @@ class app_smarttv extends module
 		$res = json_decode(json_encode($query["http_data"]), TRUE);
 		return $res;
     }
-	
+
 	function setChannel(&$lgTV, &$device, $cmd)
 	{
 		$num = preg_split('//', $cmd, -1, PREG_SPLIT_NO_EMPTY);
-		
+
 		$res = $lgTV->confirmPairing($device["ip"], $device["key"]);
 		if($res["http_code"] == 200){
 			foreach($num as $val){
@@ -371,7 +371,7 @@ class app_smarttv extends module
 			$lgTV->endPairing($device["ip"]);
 		}
 	}
-	
+
 	function sendCmd(&$lgTV, &$device, $cmd)
 	{
 		$res = $lgTV->confirmPairing($device["ip"], $device["key"]);
@@ -381,11 +381,11 @@ class app_smarttv extends module
 			return $res;
 		}
 	}
-	
+
 	function setVolume(&$lgTV, &$device, $newLevel)
     {
         $currLevel = $this -> getVolume($lgTV, $device);
-       
+
 		if($newLevel > $currLevel) $cmd = 24; // Volume Up
 		if($newLevel < $currLevel) $cmd = 25; // Volume Down
 		$level = abs($newLevel - $currLevel);
@@ -398,11 +398,11 @@ class app_smarttv extends module
 					$res = $lgTV->sendCommand($device["ip"], $device["key"], $cmd);
 					usleep(45000);
 				}
-				$lgTV->endPairing($device["ip"]);	
+				$lgTV->endPairing($device["ip"]);
 			}
-		}	   
+		}
     }
-	
+
 	function getVolume(&$lgTV, &$device)
     {
 		$query = $lgTV->sendQuery($device["ip"], $device["key"], "volume_info");
